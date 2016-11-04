@@ -1,0 +1,49 @@
+//**
+// Project Settings
+//**
+
+html, body {
+  height: 100%;
+}
+
+// Consistent settings
+$br: 5px; // Border-radius
+$btn-br: 5px; // Button border-radius
+$padding: 40px; // Padding and margins
+$line-height: 44px; // Consistent height for buttons, inputs etc.
+
+
+// Responsive breakpoints
+$small-break: 480px;
+$big-break: 1024px;
+
+// Gray Scale
+$white:  #fff;
+$black:  #1b1b1b;
+$hover: #3f51b5;
+
+// Project color variables
+  $primary-color: #1271db;
+$secondary-color: #233e5b;
+$tertiary-color: #aaa;
+
+// Container / Wrapper
+.container {
+  overflow: hidden;
+  padding: 0 30px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: $big-break) {
+  .wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -132px;
+
+    .container {
+      padding: 0 0 132px 0;
+    }
+  }
+}

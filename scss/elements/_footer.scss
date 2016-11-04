@@ -1,0 +1,34 @@
+.footer {
+  &__list {
+    overflow: hidden;
+    list-style: none;
+    font-size: 11px;
+    line-height: 22px;
+    padding-top: 20px;
+    margin: 0;
+
+    &__item {
+      padding: 20px 0 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    height: 132px;
+
+    &__list {
+      padding: 20px 0 40px 50px;
+      font-size: 13px;
+      line-height: 26px;
+
+      &__item {
+        @include span(3);
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
